@@ -5,7 +5,7 @@ import TodoAppAdd from "./TodoAppAdd";
 const TodoAppHeader = (props) => {
     return (
         <div>
-            <TodoAppTitle />
+            <TodoAppTitle title={"ToDo List"} />
             <TodoAppAdd />
         </div>
     );

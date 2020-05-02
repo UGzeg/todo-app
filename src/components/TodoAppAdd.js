@@ -13,7 +13,7 @@ class TodoAppAdd extends Component{
 
     render(){
         return (
-            <div>
+            <>
                 <form onSubmit={(e) => {
                     /// formun default davranisi olan sayfa yenileme ve post etmeyi engelliyorum
                     e.preventDefault();
@@ -21,19 +21,23 @@ class TodoAppAdd extends Component{
                     const newContent = this.state.value;
                     this.props.addTodo(newContent);
                 }}>
-                    <input
-                        type="text"
-                        placeholder="Todo Giriniz"
-                        value={this.state.value}
-                        onChange={(e) => {
-                            this.setState({
-                                value: e.target.value
-                            })
-                        }}
-                    />
-                    <button type="submit">Todo Ekle</button>
+                    <div className="form-group">
+                        <input
+                            className="form-control"
+                            type="text"
+                            placeholder="Todo Giriniz"
+                            value={this.state.value}
+                            onChange={(e) => {
+                                this.setState({
+                                    value: e.target.value
+                                })
+                            }}
+                        />
+                    </div>
+                    <button className="btn btn-success" type="submit">Todo Ekle</button>
                 </form>
-            </div>
+                <hr />
+            </>
         );
     }
 }
