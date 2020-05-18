@@ -2,13 +2,7 @@
 
 `yarn install` komutu ile paketleri yukledikten sonra `yarn start` ile projeyi calistirabilirsiniz.
 
-Projenin redux eklekmenden onceki haline de asagidaki linkten ulasabilirsiniz.
-https://github.com/yurtarmehmet/41-todo-without-redux
 
-
-# Odevler
-
- - Todolarin yanina bir sil butonu koyup butona basildiginda ilgili todonun silinmesini bekliyorum. Silme aksiyonu redux ile yapilacaktir.
 
 ## Kaynaklar
 
